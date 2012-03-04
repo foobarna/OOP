@@ -1,0 +1,4 @@
+=	Name: Barna Bogdan 
+==	Group: 913 
+===	Year: 2011/2012
+====	Object Oriented Programming Lab Assignments

@@ -30,6 +30,7 @@ int checkSurj(Function f) {
 	for (int i = 0; i < f.n; i++){
 		if (f.B[i] != '0') {
 			if (f.A[i]!='0') b[i]+=1;
+		}
 	}
 	for (int i = 0; i < f.n; i++) cout<<b[i];
 	for (int i = 0; i < f.n; i++) {
@@ -38,8 +39,6 @@ int checkSurj(Function f) {
 		}
 	}
 	return 1;
-	}
-
 }
 
 

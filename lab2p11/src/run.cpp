@@ -8,16 +8,20 @@
 
 #include <iostream>
 #include "function.h"
-#include "console.cpp"
 
 using namespace std;
-
+/*
+ * Display a list of options
+ */
 void displayO(){
 	cout<<endl<<"Type 1 to create the function F";
 	cout<<endl<<"Type 2 to check if the function F is surjective";
 	cout<<endl<<"Type 3 to exit"<<endl;
 }
 
+/*
+ * Repeatly performs operations on a given function
+ */
 int menuF(Function &f){
 	int cmd;
 	createF(f);
@@ -38,8 +42,11 @@ int menuF(Function &f){
 		case 2: {
 			if (f.n==0) cout<<"F was not defined!"<<endl;
 				else {
-					if (checkSurj(f)) cout<<endl<<"Function F is surjective"<<endl;
-					else cout<<endl<<"Function F is not surjective"<<endl;
+					if (checkSurj(f)){
+						cout<<endl<<"Function F is surjective"<<endl;
+					} else {
+						cout<<endl<<"Function F is not surjective"<<endl;
+					}
 					createF(f);
 				}
 			break;

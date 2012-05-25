@@ -4,17 +4,14 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/console.cpp \
 ../src/function.cpp \
 ../src/run.cpp 
 
 OBJS += \
-./src/console.o \
 ./src/function.o \
 ./src/run.o 
 
 CPP_DEPS += \
-./src/console.d \
 ./src/function.d \
 ./src/run.d 
 
